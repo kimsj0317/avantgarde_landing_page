@@ -3,7 +3,17 @@ import React from "react";
 function Video() {
     return (
         <>
-            here
+            <video
+                style={{
+                    width: "100%",
+                    position: "relative",
+                }}
+                autoPlay="true"
+                muted="mute"
+                src="./video/main-video-desktop.mp4"
+                alt="mainVideo"
+                loop
+            />
         </>
     );
 }
