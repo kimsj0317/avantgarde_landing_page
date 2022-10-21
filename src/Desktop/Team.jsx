@@ -1,7 +1,7 @@
 import React from "react";
 import "./text.css"
 
-function Roadmap() {
+function Team() {
     return (
         <>
             <div
@@ -12,18 +12,19 @@ function Roadmap() {
                     paddingBottom: "3%",
                 }}>
                 <div className="title">
-                    ROADMAP
+                    TEAM
                 </div>
-                <img
-                    style={{
-                        width: "30%",
-                        marginTop: "3%",
-                    }}
-                    src="./img/roadmap/roadmap_1_pc.jpg" alt="roadmap_1"
-                />
+                <div>
+                    <img
+                        style={{
+                            width: "29%",
+                        }}
+                        src="./img/teamprofile/team-01.png" alt="team-01"
+                    />
+                </div>
             </div>
         </>
     );
 }
 
-export default Roadmap;
+export default Team;
