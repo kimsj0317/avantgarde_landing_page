@@ -1,5 +1,6 @@
 import React from "react";
 import About from './About';
+import Gallery from "./Gellary";
 import Roadmap from './Roadmap';
 import Team from "./Team";
 
@@ -18,6 +19,7 @@ function Background() {
             <About />
             <Roadmap />
             <Team />
+            <Gallery />
         </>
     );
 }

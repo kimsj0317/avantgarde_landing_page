@@ -1,7 +1,9 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 
 function Navbar() {
+
+
     return (
         <>
             <nav
@@ -35,7 +37,7 @@ function Navbar() {
                 <img className="logo" src="./img/navbar/instagram.svg" alt="instagram" />
                 <img className="logo" src="./img/navbar/twitter.svg" alt="twitter" />
                 <img className="logo" src="./img/navbar/discord.svg" alt="discord" />
-                <img className="logo" src="./img/navbar/sound_off.gif" alt="sound" />
+                <img className="logo" src="./img/navbar/sound_off.gif" alt="sound_off" id="mute_button" />
             </nav>
         </>
     );

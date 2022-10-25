@@ -8,6 +8,24 @@
     src: url("../../public/font/RobotoCondensed-BoldItalic.ttf");
 }
 
+@font-face {
+    font-family: RobotoCondensed-Italic;
+    src: url("../../public/font/RobotoCondensed-Italic.ttf");
+}
+
+.nameProfile {
+    color: #FFFFFF;
+    margin-top: 7%;
+    font-family: RobotoCondensed-BoldItalic, sans-serif;
+    font-size: 1.5rem;
+}
+
+.exampleProfile {
+    color: #FFFFFF;
+    font-family: RobotoCondensed-Regular, sans-serif;
+    font-size: 1.25rem;
+}
+
 .text {
     margin-top: 7.5%;
     font-size: 7rem;
@@ -16,14 +34,14 @@
 }
 
 .title {
-    font-size: 6rem;
+    font-size: 6.5rem;
     color: #FFFFFF;
     font-family: RobotoCondensed-BoldItalic, sans-serif;
 }
 
 .example {
     font-family: RobotoCondensed-Regular, sans-serif;
-    margin-top: 2%;
+    margin-top: 3%;
     font-size: 1.6rem;
     color: #FFFFFF;
 }

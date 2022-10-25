@@ -1,22 +1,23 @@
 import React from "react";
-import "./text.css"
-import { motion } from "framer-motion"
+import "./text.css";
+import { motion } from "framer-motion";
+import AnimaitonText from "./Animation.jsx";
 
 function About() {
     return (
         <>
             <div
                 style={{
-                    paddingTop: "2.5%",
-                    paddingLeft: "5%",
+                    paddingTop: "3%",
+                    paddingLeft: "4%",
                     paddingRight: "5%",
-                    paddingBottom: "3%",
+                    paddingBottom: "5%",
                 }}>
                 <div className="title">
-                    ABOUT
+                    <AnimaitonText text="ABOUT" />
                 </div>
                 <div className="text">
-                    // THE COLLECTION
+                    <AnimaitonText text="// THE COLLECTION" />
                 </div>
                 <div className="example">
                     We are proud to present the Ha Jung Woo x SuperNormal collection, a limited edition
@@ -26,14 +27,14 @@ function About() {
                     own a unique piece of art that has the touch of both Ha Jung Woo and SuperNormal.
                 </div>
                 <div className="text">
-                    // THE ART CONCEPT
+                    <AnimaitonText text="// THE ART CONCEPT" />
                 </div>
                 <div className="example">
                     This collection features the unique style of Ha Jung Woo's artwork in the form of
                     NFTs that embodiesthe beauty and diversity SuperNormal stands for.
                 </div>
                 <div className="text">
-                    // THE VISION & VALUE
+                    <AnimaitonText text="// THE VISION & VALUE" />
                 </div>
                 <div className="example">
                     NFT technology is a cutting-edge tool that allows digital assets to transcend their

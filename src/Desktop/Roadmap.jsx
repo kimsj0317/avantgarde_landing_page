@@ -1,5 +1,6 @@
 import React from "react";
-import "./text.css"
+import "./text.css";
+import AnimaitonText from "./Animation.jsx";
 
 function Roadmap() {
     return (
@@ -7,12 +8,12 @@ function Roadmap() {
             <div
                 style={{
                     paddingTop: "4%",
-                    paddingLeft: "5%",
+                    paddingLeft: "4%",
                     paddingRight: "5%",
-                    paddingBottom: "3%",
+                    paddingBottom: "6%",
                 }}>
                 <div className="title">
-                    ROADMAP
+                    <AnimaitonText text="ROADMAP" />
                 </div>
                 <img
                     style={{

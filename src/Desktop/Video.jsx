@@ -7,6 +7,7 @@ function Video() {
                 style={{
                     width: "100%",
                     position: "relative",
+                    display: "block",
                 }}
                 autoPlay="true"
                 muted="mute"
