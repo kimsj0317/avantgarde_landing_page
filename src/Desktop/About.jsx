@@ -1,6 +1,5 @@
 import React from "react";
 import "./text.css";
-import { motion } from "framer-motion";
 import AnimaitonText from "./Animation.jsx";
 
 function About() {
@@ -13,7 +12,7 @@ function About() {
                     paddingRight: "5%",
                     paddingBottom: "5%",
                 }}>
-                <div className="title">
+                <div className="title" id="about">
                     <AnimaitonText text="ABOUT" />
                 </div>
                 <div className="text">

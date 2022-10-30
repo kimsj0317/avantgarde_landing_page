@@ -1,6 +1,7 @@
 import React from "react";
 import "./text.css";
 import AnimaitonText from "./Animation.jsx";
+import "./Roadmap.css"
 
 function Roadmap() {
     return (
@@ -15,13 +16,38 @@ function Roadmap() {
                 <div className="title">
                     <AnimaitonText text="ROADMAP" />
                 </div>
-                <img
-                    style={{
-                        width: "30%",
-                        marginTop: "3%",
-                    }}
-                    src="./img/roadmap/roadmap_1_pc.jpg" alt="roadmap_1"
-                />
+                <div className="roadmap">
+                    <img
+                        // style={{
+                        //     height: "100%",
+                        //     position: "relative",
+                        //     overflow: "hidden",
+                        //     cursor: "pointer",
+                        // }}
+                        style={{
+                            width: "25%",
+                            marginTop: "3%",
+                        }}
+                        src="./img/roadmap/roadmap_1_pc.jpg" alt="roadmap_1" />
+                    <img
+                        style={{
+                            width: "25%",
+                            marginTop: "3%",
+                        }}
+                        src="./img/roadmap/roadmap_2_pc.jpg" alt="roadmap_2" />
+                    <img
+                        style={{
+                            width: "25%",
+                            marginTop: "3%",
+                        }}
+                        src="./img/roadmap/roadmap_3_pc.jpg" alt="roadmap_3" />
+                    <img
+                        style={{
+                            width: "25%",
+                            marginTop: "3%",
+                        }}
+                        src="./img/roadmap/roadmap_4_pc.jpg" alt="roadmap_4" />
+                </div>
             </div>
         </>
     );

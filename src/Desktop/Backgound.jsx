@@ -14,8 +14,7 @@ function Background() {
                     position: "absolute",
                     zIndex: "-1",
                 }}
-                src="./img/bg/desktop-bg.png" alt="background"
-            />
+                src="./img/bg/desktop-bg.png" alt="background" />
             <About />
             <Roadmap />
             <Team />

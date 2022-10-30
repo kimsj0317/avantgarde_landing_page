@@ -17,12 +17,6 @@ const container = {
     },
 };
 
-// const tagMap = {
-//     paragraph: "p",
-//     heading1: "h1",
-//     heading2: "h2"
-// };
-
 const textAnimation = (props) => {
     const item = { // 애니메이션 옵션
         hidden: {
@@ -60,8 +54,7 @@ const textAnimation = (props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={container}
-        >
+            variants={container}>
             {words.map((word, index) => {
                 return (
                     <Wrapper key={index}>
@@ -77,12 +70,10 @@ const textAnimation = (props) => {
                                         marginLeft: "-8rem",
                                         marginRight: "-8rem",
                                     }}
-                                    key={index}
-                                >
+                                    key={index}>
                                     <motion.span
                                         style={{ display: "inline-block" }}
-                                        variants={item}
-                                    >
+                                        variants={item}>
                                         {element}
                                     </motion.span>
                                 </span>
@@ -91,7 +82,7 @@ const textAnimation = (props) => {
                     </Wrapper>
                 );
             })}
-        </motion.span>
+        </motion.span >
     );
 }
 
