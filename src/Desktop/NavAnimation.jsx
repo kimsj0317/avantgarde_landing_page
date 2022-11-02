@@ -9,7 +9,6 @@ const Wrapper = (props) => {
     );
 };
 
-// 위에서 등장하고 퇴장
 const topItem = {
     topStart: {
         x: 0,
@@ -20,7 +19,7 @@ const topItem = {
         y: "-100%",
     },
 };
-// 아래에서 등장하고 퇴장
+
 const bottomItem = {
     bottomStart: {
         x: "-100%",
@@ -100,7 +99,7 @@ export const FlyText = (props) => {
 
 export default FlyText;
 
-export function FlyIcon(children) {
+export function FlyIcon({ children }) {
     return (
         <motion.span
             initial={["bottomStart", "topStart"]}
@@ -140,3 +139,44 @@ export function FlyIcon(children) {
         </motion.span>
     );
 }
+
+// export function FlyIcon(children) {
+//     return (
+//         <motion.span
+//             initial={["bottomStart", "topStart"]}
+//             whileHover={["bottomEnd", "topEnd"]}
+//             style={{
+//                 overflowY: "hidden",
+//                 overflowX: "visible",
+//                 display: "inline-block",
+//                 position: "relative",
+//             }}
+//         >
+//             <motion.span
+//                 style={{ display: "inline-block" }}
+//                 variants={topItem}
+//                 transition={{
+//                     duration: 0.4,
+//                     ease: [0, 0.2, 0.3, 1],
+//                 }}
+//             >
+//                 {children}
+//             </motion.span>
+//             <motion.span
+//                 style={{
+//                     display: "inline-block",
+//                     position: "absolute",
+//                     top: 0,
+//                     left: 0,
+//                 }}
+//                 variants={bottomItem}
+//                 transition={{
+//                     duration: 0.4,
+//                     ease: [0, 0.2, 0.3, 1],
+//                 }}
+//             >
+//                 {children}
+//             </motion.span>
+//         </motion.span>
+//     );
+// }

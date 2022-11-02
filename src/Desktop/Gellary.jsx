@@ -9,12 +9,14 @@ import "./Gellary.css";
 import {
     Swiper,
     SwiperSlide,
+    SlideData
 } from "swiper/react";
 import { Keyboard, } from "swiper";
 import { motion, } from "framer-motion";
 
-function Gallery() {
+const imgUrl = process.env.PUBLIC_URL;
 
+function Gallery() {
     return (
         <>
             <div
@@ -27,10 +29,12 @@ function Gallery() {
                 <div className="title" style={{ marginBottom: "5%" }}>
                     <AnimationText text="GALLREY" />
                 </div>
+                {/* <img src={galleryItems.imageUrl} alt="" /> */}
                 <Swiper
                     className="swiper"
-                    slidesPerView={1.75}
+                    slidesPerView={2}
                     // spaceBetween={30}
+                    speed={800}
                     slideToClickedSlide={true}
                     centeredSlides={true}
                     keyboard={{
@@ -45,47 +49,47 @@ function Gallery() {
                         overflow: "hidden",
                     }}>
                     <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg1.png" alt="galleryimg1" />
+                        <img src={imgUrl + "/img/gellary/galleryimg1.png"} alt="galleryimg1" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <motion.img className="imgs" src="./img/gellary/galleryimg2.png" alt="galleryimg2" />
+                        <img src={imgUrl + "/img/gellary/galleryimg2.png"} alt="galleryimg2" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg3.png" alt="galleryimg3" />
+                        <img src={imgUrl + "/img/gellary/galleryimg3.png"} alt="galleryimg3" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg4.png" alt="galleryimg4" />
+                        <img src={imgUrl + "/img/gellary/galleryimg4.png"} alt="galleryimg4" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg5.png" alt="galleryimg5" />
+                        <img src={imgUrl + "/img/gellary/galleryimg5.png"} alt="galleryimg5" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg6.png" alt="galleryimg6" />
+                    {/*<SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg6.png"} alt="galleryimg6" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg7.png" alt="galleryimg7" />
+                    <SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg7.png"} alt="galleryimg7" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg8.png" alt="galleryimg8" />
+                    <SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg8.png"} alt="galleryimg8" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg9.png" alt="galleryimg9" />
+                    <SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg9.png"} alt="galleryimg9" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg10.png" alt="galleryimg10" />
+                    <SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg10.png"} alt="galleryimg10" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className="imgs" src="./img/gellary/galleryimg11.png" alt="galleryimg11" />
-                    </SwiperSlide>
+                    <SwiperSlide className="frame">
+                        <img src={imgUrl + "/img/gellary/galleryimg11.png"} alt="galleryimg11" />
+                    </SwiperSlide> */}
                 </Swiper>
             </div>
         </>
     );
 }
 
-export const galleryItems = [
+const galleryItems = [
     {
-        imageUrl: "./img/gallery/galleryimg1.png",
+        imageUrl: imgUrl + "/img/gallery/galleryimg1.png",
         description: [
             "Dream",
             "2010",

@@ -4,6 +4,7 @@ import AnimaitonText from "./Animation.jsx";
 import "./Roadmap.css"
 
 function Roadmap() {
+    const imgUrl = process.env.PUBLIC_URL;
     return (
         <>
             <div
@@ -28,25 +29,25 @@ function Roadmap() {
                             width: "25%",
                             marginTop: "3%",
                         }}
-                        src="./img/roadmap/roadmap_1_pc.jpg" alt="roadmap_1" />
+                        src={imgUrl + "/img/roadmap/roadmap_1_pc.jpg"} alt="roadmap_1" />
                     <img
                         style={{
                             width: "25%",
                             marginTop: "3%",
                         }}
-                        src="./img/roadmap/roadmap_2_pc.jpg" alt="roadmap_2" />
+                        src={imgUrl + "/img/roadmap/roadmap_2_pc.jpg"} alt="roadmap_2" />
                     <img
                         style={{
                             width: "25%",
                             marginTop: "3%",
                         }}
-                        src="./img/roadmap/roadmap_3_pc.jpg" alt="roadmap_3" />
+                        src={imgUrl + "/img/roadmap/roadmap_3_pc.jpg"} alt="roadmap_3" />
                     <img
                         style={{
                             width: "25%",
                             marginTop: "3%",
                         }}
-                        src="./img/roadmap/roadmap_4_pc.jpg" alt="roadmap_4" />
+                        src={imgUrl + "/img/roadmap/roadmap_4_pc.jpg"} alt="roadmap_4" />
                 </div>
             </div>
         </>

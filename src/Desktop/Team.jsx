@@ -3,6 +3,8 @@ import "./text.css";
 import AnimationText from "./Animation.jsx"
 
 function Team() {
+    const imgUrl = process.env.PUBLIC_URL;
+
     const secLine = { marginTop: "5%" };
 
     const imgStyle = {
@@ -61,7 +63,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-01.png"
+                                    src={imgUrl + "/img/teamprofile/team-01.png"}
                                     alt="team-01" />
                             </div>
                         </div>
@@ -96,7 +98,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-02.png"
+                                    src={imgUrl + "/img/teamprofile/team-02.png"}
                                     alt="team-02" />
                             </div>
                         </div>
@@ -134,7 +136,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-03.png"
+                                    src={imgUrl + "/img/teamprofile/team-03.png"}
                                     alt="team-03" />
                             </div>
                         </div>
@@ -172,7 +174,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-04.png"
+                                    src={imgUrl + "/img/teamprofile/team-04.png"}
                                     alt="team-04" />
                             </div>
                         </div>
@@ -204,7 +206,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-05.png"
+                                    src={imgUrl + "/img/teamprofile/team-05.png"}
                                     alt="team-05" />
                             </div>
                         </div>
@@ -233,7 +235,7 @@ function Team() {
                             >
                                 <img
                                     style={imgStyle}
-                                    src="./img/teamprofile/team-06.png"
+                                    src={imgUrl + "/img/teamprofile/team-06.png"}
                                     alt="team-06" />
                             </div>
                         </div>

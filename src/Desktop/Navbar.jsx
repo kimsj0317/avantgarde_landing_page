@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { FlyText, FlyIcon } from "./NavAnimation";
 
 function Navbar() {
+    const imgUrl = process.env.PUBLIC_URL;
 
     return (
         <>
@@ -23,7 +24,7 @@ function Navbar() {
                         top: "30%",
                         marginLeft: "4.5%",
                     }}
-                    src="./img/navbar/navbar-logo.png"
+                    src={imgUrl + "/img/navbar/navbar-logo.png"}
                     alt="logo"
                 />
 
@@ -54,7 +55,7 @@ function Navbar() {
                     <FlyText text={"TEAM"} />
                 </div>
                 <div className="subtitle">
-                    <FlyText text={"AG STUDIO"} />
+                    <FlyText text={"GALLERY"} />
                 </div>
                 <div
                     className="subtitle"
@@ -62,7 +63,7 @@ function Navbar() {
                         event.preventDefault();
                         alert("coming soon");
                     }}>
-                    <FlyText text={"ABOUT"} />
+                    <FlyText text={"AG STUDIO"} />
                 </div>
 
                 {/* <FlyIcon>
@@ -86,29 +87,31 @@ function Navbar() {
                         event.preventDefault();
                         alert("coming soon");
                     }}>
-                    <img className="logo" src="./img/navbar/opensea.svg" alt="opensea" />
+                    <FlyIcon>
+                        <img className="logo" src={imgUrl + "/img/navbar/opensea.svg"} alt="opensea" />
+                    </FlyIcon>
                 </a>
                 <a onClick={(event) => {
                     event.preventDefault();
                     alert("coming soon");
                 }}>
-                    <img className="logo" src="./img/navbar/instagram.svg" alt="instagram" />
+                    {/* <FlyIcon> */}
+                    <img className="logo" src={imgUrl + "/img/navbar/instagram.svg"} alt="instagram" />
+                    {/* </FlyIcon> */}
                 </a>
                 <a
-                    class="item"
                     href="https://discord.com/invite/tZDtDSPRF8"
                     target="_blank"
                 >
-                    <img className="logo" src="./img/navbar/twitter.svg" alt="twitter" />
+                    <img className="logo" src={imgUrl + "/img/navbar/twitter.svg"} alt="twitter" />
                 </a>
                 <a
-                    class="item"
                     href="https://discord.com/invite/tZDtDSPRF8"
                     target="_blank"
                 >
-                    <img className="logo" src="./img/navbar/discord.svg" alt="discord" />
+                    <img className="logo" src={imgUrl + "/img/navbar/discord.svg"} alt="discord" />
                 </a>
-                <img className="logo" src="./img/navbar/sound_off.gif" alt="sound_off" id="mute_button" />
+                <img className="logo" src={imgUrl + "/img/navbar/sound_off.gif"} alt="sound_off" id="mute_button" />
             </nav>
         </>
     );

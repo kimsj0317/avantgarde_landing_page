@@ -10,13 +10,12 @@
 .subtitle {
     font-family: RobotoCondensed-Bold, sans-serif;
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-left: 2%;
     top: 30%;
     position: relative;
     display: inline-block;
 }
-
 
 .logo {
     margin-right: 2%;
